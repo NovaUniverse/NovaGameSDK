@@ -1,0 +1,7 @@
+name: NovaGameSDK
+main: net.novauniverse.novagamesdk.public
+description: Novauniverse SDK
+version: 1.0
+api-version: 1.13
+depend: [NovaCore, NovaCoreGameEngine]
+loadbefore: [NovaGamesTarget]
