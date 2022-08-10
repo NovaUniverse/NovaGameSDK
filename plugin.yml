@@ -1,5 +1,5 @@
 name: NovaGameSDK
-main: net.novauniverse.novagamesdk.public
+main: net.novauniverse.novagamesdk.NovaGameSDK
 description: Novauniverse SDK
 version: 1.0
 api-version: 1.13
