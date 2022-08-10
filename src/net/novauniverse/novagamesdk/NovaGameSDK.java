@@ -75,8 +75,6 @@ public class NovaGameSDK extends JavaPlugin implements Listener {
 			teams.add(team);
 		});
 
-		ModuleManager.require(GameLobby.class);
-
 		SDKTeamManager teamManager = new SDKTeamManager();
 		NovaCore.getInstance().setTeamManager(teamManager);
 		teamManager.getTeams().addAll(teams);
@@ -107,6 +105,8 @@ public class NovaGameSDK extends JavaPlugin implements Listener {
 
 		GameLobby.getInstance().getMapReader().loadAll(gameLobbyDataDirectory, gameLobbyWorldDirectory);
 		GameLobby.getInstance().setMapSelector(new RandomLobbyMapSelector());
+		
+		ModuleManager.enable(GameLobby.class);
 
 		Log.info("GameSDK", "Ready");
 	}
